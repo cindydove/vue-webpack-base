@@ -1,16 +1,15 @@
 <template>
   <div>
-    <router-link to="/home">首页</router-link>
-    <router-view></router-view>
-  </div>
+      <h1>home</h1>    
+ </div>
 </template>
 <script>
 export default {
   
 }
 </script>
-
 <style lang="scss">
 
 </style>
+
 

@@ -1,6 +1,7 @@
 import Vue from "vue"
 // 安装路由
 import VueRouter from 'vue-router'
+// 为 Vue 安装 vue-router
 Vue.use(VueRouter)
 
 // 安装Vuex
@@ -20,7 +21,10 @@ import fetchJsonp from 'fetch-jsonp'
 Vue.prototype.$ajax = fetchJsonp
 
 import App from "./components/app.vue"
+
+import router from './router.js'
 var vm = new Vue({
     el: '#app',
-    render: c => c(App) 
+    render: c => c(App),
+    router
 })
